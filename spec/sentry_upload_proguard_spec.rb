@@ -13,7 +13,8 @@ describe Fastlane do
               auth_token: 'something123',
               project_slug: 'some_project',
               mapping_path: '#{mapping_path}',
-              android_manifest_path: '#{android_manifest_path}')
+              android_manifest_path: '#{android_manifest_path}',
+              uuid: 'something123')
           end").runner.execute(:test)
         end.to raise_error("Both API key and authentication token found for SentryAction given, please only give one")
       end
@@ -29,7 +30,8 @@ describe Fastlane do
               api_key: 'something123',
               project_slug: 'some_project',
               mapping_path: '#{mapping_path}',
-              android_manifest_path: '#{android_manifest_path}')
+              android_manifest_path: '#{android_manifest_path}',
+              uuid: 'something123')
           end").runner.execute(:test)
         end.to raise_error("Could not find your mapping file at path '#{mapping_path}'")
       end
@@ -45,7 +47,8 @@ describe Fastlane do
               api_key: 'something123',
               project_slug: 'some_project',
               mapping_path: '#{mapping_path}',
-              android_manifest_path: '#{android_manifest_path}')
+              android_manifest_path: '#{android_manifest_path}',
+              uuid: 'something123')
           end").runner.execute(:test)
         end.to raise_error("Could not find your merged AndroidManifest file at path '#{android_manifest_path}'")
       end
