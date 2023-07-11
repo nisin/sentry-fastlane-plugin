@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Android upload proguard command add uuid parameter
+
 ### Features
 
 - Bump CLI from v2.10.0 to v2.13.0 ([#185](https://github.com/getsentry/sentry-fastlane-plugin/pull/185), [#187](https://github.com/getsentry/sentry-fastlane-plugin/pull/187), [#188](https://github.com/getsentry/sentry-fastlane-plugin/pull/188))
